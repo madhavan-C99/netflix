@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="browse_by_language.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/S4oi7EPZbv2UEPaukW54OORa0S8/AAAABaVWJpPUSEX6XPwGJEvuGCND9yqA2vpOWwOTn8U99ZboLBrVYlOWeOc6vUVKGZ92ZSp5NNPO2TtljXMqJn9HlDSnnfU0bMA.png?r=e40" alt="" class="kids-img">
+        <!-- logo -->
+        <div class="logo-box">
+            <div class="netflix-logo">
+                <img src="../../assets/images/Netflix_Logo_PMS.png" alt="logo">
+            </div>
+            <div class="n-logo">
+                <img src="../../assets/images/nficon2023.png" alt="logo">
+                <h2>Browse by language</h2>
+            </div>
+        </div>
+        <!-- nav -->
+        <nav>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./characters.html">Characters</a></li>
+                <li><a href="./shows.html">Shows</a></li>
+                <li><a href="./movies.html">Movies</a></li>
+                <li><a href="./new_popular.html">New & Popular</a></li>
+                <li><a href="./my_netflix.html">My Netflix</a></li>
+                <li style="background-color: rgba(48, 47, 47, 0.486);"><a href="./browse_by_language.html">Browse by Languages</a></li>
+                <li class="more-label"><label for="more">More<i class="fa-solid fa-angle-down"></i></label></li>
+            </ul>
+        </nav>
+        <!-- More option -->
+        <input type="checkbox" name="more" id="more">
+        <div class="more-options">
+            <!-- Duplicate nav bar -->
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./shows.html">Shows</a></li>
+                <li><a href="./movies.html">Movies</a></li>
+                <li><a href="./games.html">Games</a></li>
+                <li><a href="./new_popular.html">New & Popular</a></li>
+                <li><a href="./my_netflix.html">My Netflix</a></li>
+                <li><a href="./browse_by_language.html">Browse by Languages</a></li>
+            </ul>
+        </div>
+        <!-- search -->
+        <input type="checkbox" name="search" id="search">
+        <div class="search-bar">
+            <label for="search"><i class="fa-solid fa-arrow-left"></i><i class="fa-brands fa-sistrix"></i></label>
+            <form action="#"><input type="search" name="search" id="search" placeholder="Search Show, Movies, Games"></form>
+        </div>
+        <div class="search-box">
+            <label for="search">
+                <i class="fa-brands fa-sistrix"></i>
+                <span>Search</span>
+            </label>
+        </div>
+        <!-- download button -->
+        <input type="checkbox" name="downloads" id="downloads">
+        <div class="downloads-card">
+            <label for="downloads"><i class="fa-solid fa-arrow-left"></i> <p>Downloads</p></label>
+            <div class="download-icon">
+                <i class="bi bi-arrow-down"></i>
+                <div></div>
+            </div>
+            <p>Movies and Shows that you download appear here.</p>
+            <a href="#">Find Something to Download</a>
+        </div>
+        <div class="downloads-box">
+            <label class="download" for="downloads">
+                <i class="fa-solid fa-arrow-down"></i>
+                <div class="download-bar"></div>
+            </label>
+        </div>
+        <!-- user -->
+        <input type="checkbox" name="user" id="user">
+        <div class="user-card">
+            <a href="../browse.html" class="box" style="padding: 10px 5px;">
+                <div class="option"><p>Switch Profile</p></div>
+            </a>
+            <a href="#" class="box">
+                <div class="logo"><i class="bi bi-question-circle"></i></div>
+                <div class="option"><p>Help Center</p></div>
+            </a>
+            <a href="../../index.html" class="box">
+                <div class="option"><p>Sign Out of Netflix</p></div>
+            </a>
+        </div>
+        <div class="user-box">
+            <!-- <div class="kids">
+                <a href="./kids/home.html"><img src="../../assets/images/kids.png" alt="kids"><span>Children</span></a>
+            </div> -->
+            <div class="user">
+                <label for="user">
+                    <a href="#"><img src="../../assets/images/kids.png" alt="user"></a>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <span>My Netflix</span>
+                </label>
+            </div>
+        </div>
+        <!-- bottom menu box -->
+        <div class="bottom-menu"></div>
+        <div class="home">
+            <a href="#">
+                <i class="fa-regular fa-house"></i>
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="clips">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M18.5 5c.9.58 1.5 1.6 1.5 2.75v8.5A5.75 5.75 0 0 1 14.25 22h-4.5c-1.15 0-2.17-.6-2.74-1.5h7.24c2.35 0 4.25-1.9 4.25-4.25V5.01m-4.25-3c1.8 0 3.25 1.46 3.25 3.25v11c0 1.8-1.46 3.25-3.25 3.25h-7A3.25 3.25 0 0 1 4 16.25v-11C4 3.45 5.46 2 7.25 2zm-7 1.5c-.97 0-1.75.78-1.75 1.75v11c0 .97.78 1.75 1.75 1.75h7c.97 0 1.75-.78 1.75-1.75v-11c0-.97-.78-1.75-1.75-1.75zM8 8.75c0-.97 1.07-1.57 1.9-1.06l3.26 2c.79.48.79 1.64 0 2.13l-3.26 2c-.83.5-1.9-.1-1.9-1.07z"/></svg>
+                <span>clips</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <br><br><br><br><br>
+        <div class="head-container">
+                <div class="heading"><h3>Browse By Language</h3></div>
+                <div class="indicators-box">
+                    <div class="indicator">Select your preference</div>
+                    <div class="indicator"><span>Original Language</span><i class="fa-solid fa-caret-down"></i></div>
+                    <div class="indicator"><span>English</span><i class="fa-solid fa-caret-down"></i></div>
+                </div>
+            </div>
+        <br>
+        <section class="movies-section">
+            <div class="head-container">
+            </div>
+            <div class="movie-container">
+                <div class="left-arrow"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="movie-box">
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABRDNBnN74FbgLdX-Q6q09FL4BaAwstwPxbdKOyYYXnemcR2lykqZb-KY7zgun0v-oqydx4-0FPh2aicmLMKXsbQHeR4yBxbCjV6WSx_8eT56kgR64Iakk8uVEswvNsLwNpUZHMdz_GtzPk5DnZFNZIGr93oIIjWl1Im_i54dzg.webp?r=1ec" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABRZzq844x7PPwzGScCxQ_1o7MZP3iTF0QOwsk7lm9kjGQuX3jpu3GvttSmD66Vt5aqogXCjTEEZV4irqlD-j77QtfO65cQNgUAY.webp?r=404" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABR__nBKTfHHmDjSFkjE0LrCmsOdAYtSTknj9js5vb2lQEeC-5BTColu2oH_4LBYzENGc1jyS63njLq3-xe-ji2TDO9vl4Fvwb6I.webp?r=17f" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABRh3GCMAf2SPSjKdwdZzXI9muEyuZAGPIVNLkQOiGU3VHLe1u09nwqE9fK3RMrW9nnnFbvOi_4gRzEqeP4av-mS5B3HeK_bOz8U.webp?r=4ae" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABRqjsnLO5tKWblrK_nlCNTX3n7gTEeiJLrUv_2RlNf0cuEscYSK4HrLCd_sYxC-m9FvRU0EERauk1uEYkUzMfgQnVzD1YYD30pk.webp?r=1fb" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABSAMjGFe6zZqLGnq1EKMRtOz7dSD01rnRC0HUeHIpQcjLFIHxkXz5N7sO8ZtEhRR0pJsz7WWRxLK9NJ-Tysw_QhaPoJ_c5122EU.webp?r=10e" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABSF-ZrCYyYbR2Dd-4dF6mZpe8quE2w5QgnYTEx2iOav8qpYb1XwhgKkgTuZUKUgFNimiCx5us2dUWuTD7XuRJN9n_qNzMP76HI4.webp?r=36e" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABSOhBDLSiIdQZQ94iEV32WGiYpHIl7SyvoX3PJ-uKa6CFdvII4h6ts3taDVE2XJiKmp85CtI1UvdvQWGush3dBAAbgNHd7aQgcM.webp?r=c6b" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABSQoRG7Adc4xoM06cBhDZfU4C44uM4FIOrqcvOx_7_aV_uE5gkX6Pzmuwi8z8B3lGvBm0RX--XmBGtnEm-gvEoVDFzrMu6Nr20s.webp?r=62a" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABQ25maT54r7tzCdDV8LklRHTL_f3EPvqbw0JjWV9SM5WuqLZRTu9zHdYjCs-EMSp3f7i3Pju8jeICYwkOI_brw4xQ7vaQVPDqcY.webp?r=420" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABQL_hJx--yx-vI-OBcPJKt70VqBfq37aOjj4fsR1w136Odrz5SYxdXzHkkLIdkaMrP5pTUryIREjsljsVLcVoXT5hG-U18yBoyk.webp?r=99b" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABQXF7z2PainS1Y-Fv57-ITzTnuqWAlTd5Zrmh5vpunWiBn-bfzcLS7_F2iAeMMlmAx276-XxsYklwdBHho1LJo9TmKhyvDoH22c.webp?r=c5e" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABQXU8BUBwb9s1s81W4zYWEIZIkruhZXooWlu6ZM20ROuohEYWJGRlsbRD9NFeubKZLXp2i8X3EBPwT3SvbBB-lpJwd91JK5lB8o.webp?r=487" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABQb9HEP7zdsTH0EAr7iGRYCmg4l8Irg2llZUlKR-ddG9vBNPE8-OTy-xRHdHtkOBrrYySJQpOtBHROVkjuuYV2pAl-I11gJYJIE.webp?r=ecc" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABQhqBRr12F_u8aNU--4if6125lHe-6CuzBBjAXIPabGwYa5AjPV4ocTLX2Ltjmj792pxV4uEmjpHsaVpsz1ZI4ZXAJ5jdRsPfF0.webp?r=73c" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABQrZOWRIR6mk1tZUPyXlh2RfkJmFe93Gnb0FLoum_iJ6ITFg4e4lN3g1CxxM2Wm5q6Zap8PCn4fQLIIJDubuHoIXLhpCcGV4-FM.webp?r=3f0" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABQxAuSxHdvt_dE1btj7NvWl8PYbpR_fwjrDdcdpQWQ2KkUGX9vzAYxgOovGpCRMvYbHzwXvaKeRPQqhY1sA9yVjXyGgCdRe0SVg.webp?r=4e8" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABR5jVhfe6CEnPr3YEwz8siNre5ezrQ5bT0uJenMWQrh2sfRSr0XHqvU3iVqXxGqPA3uOJwJ9ZsqoSW-t_qqqVsDvBKqslEhv4uk.webp?r=03f" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABRB6S2IP7SodCxZEdRqRbsq2QBZniSmSbXT0pxDDtt8PJOxBz52PmI8zvZTcVgojO5Eyv6t2y7R5dj-li9nzu7pCD06Pc4-Ge1o.webp?r=673" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABSYgZTp_vLx0mmkhzHYLXch_ywRWm2wUy9UI9bGzOYuXpLh6D3qsd2E46YwDhiIgfUIDXewF4NDTFBvcm-NHfmPJYoaZmAKP7iM.webp?r=715" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="right-arrow"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+        </section>
+        <section class="movies-section movie-section-2">
+            <div class="head-container">
+            </div>
+            <div class="movie-container">
+                <div class="left-arrow"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="movie-box">
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABX4LrlxU09Y__XG1ODMxT2ahO904CEGN-I54GZk8SNsipo5btJC17GJnjSyvKxIOIBoRuZzUR6SXKkfwJ2x-QtFfq0IMXO0sO-w.webp?r=6eb" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABX6uquG9ZKIjbcwTyWPv-z2ZwCi1TzXvpVPO0iYvIxhJtINV13-EAnzBLlKBKd7bBj80tCzqmDYcOh-HgyoOF5Jrz35MKjwoxcvTR12oV6emY4-UO2k-WWiZMf3J6R9l-grIbZ-Jnfmf80sXvfmZqms-CY-C9NKRCsrbZU9aAQ.webp?r=696" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABXIfLupPh1WYiHKOj96kQYJK7XCYEHuqmtxxYhFs7EjblfpViquO4JlQxWLAnZo1Q99AvGcNKrQLZOgoQ8TpH6sE59XW1SGRGAk.webp?r=958" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABXdQeCe1YLEKpA3QyiRtGGnagXX_Av5Uu21jLBCoJIddGlNpMf-Hnbgbzj0y-zu8wF4m88BiUGKPff_kWGOItIdEx8i7YP3PVO8.webp?r=c91" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABXnDDoFFCNLUFp0Ij-gqDl_9aZjO0RDjgdd2NywJznsWOMF4kkhuqVwXYgdzdTPBvwje0HSFV5priJbpq_4AihFJm3ILd2sNgGg.webp?r=32c" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABY0SQA254bO-kVD2s8QKT5poSaMHNwzLoAigEjNkYyQ6EwziYjm-gb4ws8m7t7jHy0pg3TC7HfsbKgxIxuAcCXMSNymSLiGjR3Q.webp?r=6b6" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABYMbPFbUvccSKDk2d3y5Jf1380Ua3NEYe-x-dMyuKp5TpqWX0AyjlSLF66KwTB350ES89prallyaGSuhycIXLaV_8RxYH1DieeoOTFFIrf9NVk45qTNU86ZdMY-b8LOsJ0W1_eHmHnvWwKTeT_0MKdj1k7_6xiToHk40GCC1EYAsOShhLq-Zl_AMQKeWfvohp6ahQh7Ste_iDN4RkL3MFJxxWo33nCj6gxdGO4dRxZRil6eF6_AHT57P9Nkpsx9vqXJvSSiY8jY1k72_YgnkNPKVmGDi8YVBAW0yek_kpsNqM5DJaGnpRHwI5Rbrag.webp?r=fe7" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABYNLhrvbv_O0IL9rLaL6-0cQqWaj0zWk7aWiatCwqRYeDbb7vreGHimbX-63IoeQAeAEPnypfAs5qcxPk_mbdiSN3oP5okdtSK0.webp?r=65a" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABYOmggmzSWJYZiwxNB8Vjy25ZwFpdr-jQ01jLQSrQTqKFsvS59d_AGZtUqjgaz4euF_Hie9wPjvdPja6JYi14uEpKZsNgyCEEDI.webp?r=a43" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABYP-TWt6wKdnMx11-W8kqsfWETuETvbdtw5y7ZK_2PxC44v-KA129zirW5MJpxlK6Fjy38J6jfsb9kqw51FotOBC9GpdgO5HxUoVgH_cjc-As6E_Q1QqKIBlhpUkrM-0SLdoxYFWl0wvZE_bpsYQpwdG8Y-8xhf46Ri77fw.webp?r=caa" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABYQXc5lholzd3w5sld7RHE6ykM5XwztWUcAkQRrgY5pJ8dd-jVs7niL0rZQXkaXwlPElI2ipYHFAnY0nxSYZMkJRMTMVQj_4vt0.webp?r=0d0" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABYU5VabTLEgPC0pxplsVEPyaaNh2oxduWenHc5I2J6h6jHG71Rc0MIA568phIGTgNiyBQWBd3xPg5S6_k7r9NRsIXF5U1JA4Zs0.webp?r=88e" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABYXUiQcWBNypEl8YeVaObVkHY_56K-5iOUYPpIVT2pFcfjkfZXWFMJn2I_YnEf-NsPQ4NnUZGwc1_ZUnN5XKc1G05hRQM4fcRRw.webp?r=d2f" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="right-arrow"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+        </section>
+         <section class="movies-section movie-section-2">
+            <div class="head-container">
+            </div>
+            <div class="movie-container">
+                <div class="left-arrow"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="movie-box">
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABYZBEKpcOAWPv3lctqiyPg7EZHdEuHIfpH_VP8nlcMMOTAwMj-vFqXb9sX3uIzcO50PibuzRKe1_btkWjtkWIR99rZeOHypF-Gc.webp?r=41b" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABYoSXgnOFwSAVSub0xw4KTA4N7XhPQ2c2phHW0wjjzjByP_eQOnXNn9HnSy8K4nvmb_dXz15iwdRfou0_gvgF2qyC2p9FiTxIZ8.webp?r=423" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABZE9x0kSRNEL78Z01jqqqoAE2By7nfJOZCTfLt1o_eydYv3tVVI-BtIAyuUTQVJ-bvSJvdS7pE5-vQuswpT3ot5uY7SXPMUbWfNFLCqv7aHV76uTtfPwfTI3_Xy4yy3qXmEQqMz0uEAlvSh_-pGZ0-pUfY1AREyFrrmnITLzrg.webp?r=9b7" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABYrbODLGg6xUTGtzcyG35JxAW7dcK8mYN2yG-973iWwgMravpL_oecYteVEff-biGvjYznjOIiQs2gYum3c9MB8lW3f95nq4imE.webp?r=02f" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABZRFLRW-p2luGvEM0-w45alHIgD7ofRMtvt8O2Jsyk7DYOmQtFV2enMaz2c7rfubod_bu_FW0wkLtft0JYVABkQ8npaVhangZ0Q.webp?r=15c" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABZYqHSAPV11iCRtK_cp-ypb6Lx7wAU_AzVOR-5Ou0UQTaJgOMALRBavUMdHEm1bPrt1goiKCS1cL57EjSOQa_4Xj2ZOc4Kkyc_Q.webp?r=776" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABZhLCqIp7egCXvwZQExywA85Dc6UrbGHpO3ves0pMQ2Dd-SCLY-ZEFpKDNtKGPVewx1TS3_7RLLSqNTCUkzKV-nJBUE_yAE7xRo.webp?r=f5d" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABZmkJ2PFpb8uuMcoFWINZCo477odtaTMsjKcPoTFxfdWqEqRNVtu8itGYtyFqirxZD5tkkTec7m5iA87CobRpyvikglbhmEhTMo.webp?r=4ee" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABZwiva6It62C-SGlhBxpMGOKvTN0NMqu6IJUYoEfWs2Zd-usSTnpXG3gSckFup5tcOTaBUt7zaYkOmaz_wzgjtPSG-2lH1c3c_c.webp?r=9e8" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABZy0YYzu24SsWU5McJ4lYuDFw8ZNqNFoVevQ73X2iXvvePfyTzvKQJDC1mjfc9SMuRboa6Ax34ebuoRKPNAIl2RBrnelXkWW8EA.webp?r=7e7" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABa5Q2A3quhIcuCmJ5DKxbP561jaKFxdL_jT_AWKKWkjfQ2BIXILKNkRpoYOFTN0S1IisEBL9S59w14huM-FxUtbQgDsRidm9PPo.webp?r=b6b" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABa5i2Wrqj6kAORCwO_dbbD5RZ_haMAQv59ISvsilsvxC17H3ZF_hRLLGzLsYHi1UhWBmQr9JQPYY_DjG20WKs9c4liBlZB9wtxA.webp?r=858" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABa8C7AUZv7U12A5iugVDvXAunYcxHKrpztSI-3mCHzrBgcaLbmhSbwFwZW9a1JoFy_g5J5UWTLUvEeWAvq3wVhETybZh2P-qcmxRp5zsObKt0ckCUcYHOSBCplzUb-Jqxg4vtHlL6sCieK-u5TA0vFGc8SerUgiAvD-fsYk.webp?r=952" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="right-arrow"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+        </section>
+         <section class="movies-section movie-section-2">
+            <div class="head-container">
+            </div>
+            <div class="movie-container">
+                <div class="left-arrow"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="movie-box">
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABaljNHsBOf645IrvMtx-zq9qRc6mRuQyI1Pz3lSEmA5t_2rld52lctDIJPFVtOqLmWffSBb5v_01LwUSoWkGtD1TFUp75AVc19U.webp?r=3f3" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABb-wpHfEvBVJfGXuDlD0nWjIIhcMeh6rhn_AA-yMrZ0YACzYV_eVsrcYuGnhTfcQ1t9LXbT62VRmr2SZ1-z2G8qrVRJ6KWmB2-0.webp?r=14b" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABbTNR2NaYANTG9HOkrQOdIj3ib2RJCtDPZyEJdwc36Q9nUF8tBz9q0jpWSg7Td1VyR3vHwhPqMZZA270Q2QOpl4qXjHfpe7w3Rc.webp?r=4a3" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABbTszpGIa3637hMIck1JhKf30gH7tyU2Vi8jHIAp409mtmDKF7YDZNMsN1yO3Rb1xL69s7JNY1XXvdtQdjSMJ5M2KFqFG-woAqc.webp?r=f42" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABbeFNvneTetSeuhUpnGQk95oeHb-5zIk_D9Cqya1tMvHk7B-Aq5ij6RRp4h2nEMR58oM6pk96Qwo6Qy8WZxycEt6UUFg0pqPm1U.webp?r=a02" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABbncR-hYLMREsgspUtdTgc7i9DgFfaZcF51uWf9__FuX4Z-Azp9N1NiF5QCCqxjLT92Sqjqrq2MQ8yfTZK-U3ohpBov9JRhTmqU.webp?r=c80" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABc0ORPbm7md1SV8G2_xEzhQJjhB6pLKbh1nr3WhPkdm2EEko7FuMfLNwolWLFUfNT4VpeauIO4Mt1wU5Wa9N5C4c--9_tpNp9Hg.webp?r=e2a" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABc6V8fkg_fJUwps6LvVxEw_pI5AqK2hPLXBIwUW6LpAh6-nCh63nTfQHmDt5WMFQsPoipjlqcLZcNjruGe6LBTCiNJTPy_f9mho.webp?r=efb" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABcaAcNgzaoI4p7n5zDNB3NukyiNzhCve0rb7DfrvsazQ2X_XEe4AOS7aoxkbq2kcxGhjRNi1nrcPyxC0t_talDEDVIYDSceqlog.webp?r=637" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABcjbZAr52PAOP5JGAk7KQwMbf8urWeAqZptYd3PRcadtzqXUA77AICJfAoMEMLP3IRuDKxgGTuf-k1b5E-e2FgJYBJyfwJ8iS6I.webp?r=2de" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABcmxsalAU_6DbJRVNBVrt9Ssvs7BLuHE16tBjctRIHat4EyFn4xa4QMZsLjDRgnF91BctawGF7bce-Uyrkb1ZHpyJyTa5REG2JU.webp?r=a21" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABcrtGMqbr3FPMkYIrVIOVB9E2YzSux1_PyVhvUIU-lhUC9topB2insFCsteP2EeFxOtABKpHfMREJSZ0fFIlh_T5tbfAfF01uD0.webp?r=2ac" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="movie-card">
+                        <div class="card-img">
+                            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/0Qzqdxw-HG1AiOKLWWPsFOUDA2E/AAAABdHke5AuWr5TaoYXy6O9ThMxHdLjuPIMJfd32dCJ33w8I9aVBfGz-ogNHxqVmeVmmSmGunNvl-gJtpGhFSeClLREFFZgNQqR2lA.webp?r=b97" alt="" width="100%" height="100%">
+                        </div>
+                        <div class="card-body">
+                            <div class="content">
+                                <a href="#"><i class="fa-solid fa-circle-play"></i></a>
+                                <a href="#"><i class="bi bi-plus-circle"></i></a>
+                                <a href="#"><i class="bi bi-hand-thumbs-up"></i></a>
+                                <a href="#"><i class="bi bi-chevron-down"></i></a>
+                            </div>
+                            <div class="content">
+                                <span>Series</span>
+                                <span>U/A 16+</span>
+                                <span>16 parts</span>
+                                <span>HD</span>
+                            </div>
+                            <div class="content">
+                                <span>Sci-Fi</span>
+                                <span></span>
+                                <span>Drama</span>
+                                <span></span>
+                                <span>Thriller</span>
+                                <span></span>
+                                <span>Fantasy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="right-arrow"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+        </section>    
+    </main>
+     <footer>
+        <div class="footer-container">
+            <div class="footer-box">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <p>Audio Description</p>
+                <p>Investors Relations</p>
+                <p>Legal Notices</p>
+                <p><i class="fa-regular fa-copyright"></i>1997-2026 Netflix, Inc.</p>
+            </div>
+            <div class="footer-box">
+                <p>Help Center</p>
+                <p>Jobs</p>
+                <p>Cookie Preferences</p>
+            </div>
+            <div class="footer-box">
+                <p>Gift Cards</p>
+                <p>Terms of Use</p>
+                <p>Corporate information</p>
+            </div>
+            <div class="footer-box">
+                <p>Media Center</p>
+                <p>Privacy</p>
+                <p>Contact Us</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>

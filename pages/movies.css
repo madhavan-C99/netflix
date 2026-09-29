@@ -1,0 +1,95 @@
+.hero-section{
+    background-color: rgb(17, 17, 17);
+    width: 100%;
+    height: 120vh;
+    padding-top: 15vh;
+}
+.hero-movie-card>.video-box{
+    position: relative;
+    overflow: hidden;
+}
+.hero-movie-card video{
+    height: 140%;
+    position: absolute;
+    top: -24vh;
+}
+.category-card+div{
+    position: absolute;
+    top: 10vh;
+    left: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: white;
+    font-size: 12px;
+}
+.category-card+div>label{
+    cursor: pointer;
+    padding: 10px 20px;
+    border: solid 1px rgb(61, 61, 61);
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(51, 51, 51, 0.582);
+}
+.category-card{
+    display: none;
+    position: absolute;
+    z-index: 900;
+    width: 250px;
+    height: 400px;
+    background-color: rgb(31, 31, 31);
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+.category-card>ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+}
+.category-card>ul>li{
+    padding: 10px 5px;
+}
+.category-card>ul>li:hover{
+    background-color: grey;
+    border-radius: 5px;
+}
+#category:checked+.category-card{
+    display: block;
+    top: 10vh;
+    left: 18vw;
+}
+@media (max-width:575.99px) {
+    .hero-section{
+        padding-top: 6vh;
+        height: 60vh;
+    }
+    .category-card+div{
+        top: 20vh;
+        left: 5vw;
+        z-index: 900;
+    }
+    #category:checked+.category-card{
+        top: 26vh;
+        left: 10vw;
+    }
+}
+@media (min-width:576px) and (max-width:767.99px){
+     .hero-section{
+        padding-top: 16vh;
+        height: 80vh;
+    }
+    .category-card+div{
+        top: 20vh;
+        left: 5vw;
+        z-index: 900;
+    }
+    #category:checked+.category-card{
+        top: 26vh;
+        left: 10vw;
+    }
+}

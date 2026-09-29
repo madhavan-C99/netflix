@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./characters.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/S4oi7EPZbv2UEPaukW54OORa0S8/AAAABaVWJpPUSEX6XPwGJEvuGCND9yqA2vpOWwOTn8U99ZboLBrVYlOWeOc6vUVKGZ92ZSp5NNPO2TtljXMqJn9HlDSnnfU0bMA.png?r=e40" alt="" class="kids-img">
+        <!-- logo -->
+        <div class="logo-box">
+            <div class="netflix-logo">
+                <img src="../../assets/images/Netflix_Logo_PMS.png" alt="logo">
+            </div>
+            <div class="n-logo">
+                <img src="../../assets/images/nficon2023.png" alt="logo">
+                <h2>Characters</h2>
+            </div>
+        </div>
+        <!-- nav -->
+        <nav>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li style="background-color: rgba(48, 47, 47, 0.486);"><a href="./characters.html">Characters</a></li>
+                <li><a href="./shows.html">Shows</a></li>
+                <li><a href="./movies.html">Movies</a></li>
+                <li><a href="./new_popular.html">New & Popular</a></li>
+                <li><a href="./my_netflix.html">My Netflix</a></li>
+                <li><a href="./browse_by_language.html">Browse by Languages</a></li>
+                <li class="more-label"><label for="more">More<i class="fa-solid fa-angle-down"></i></label></li>
+            </ul>
+        </nav>
+        <!-- More option -->
+        <input type="checkbox" name="more" id="more">
+        <div class="more-options">
+            <!-- Duplicate nav bar -->
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./shows.html">Shows</a></li>
+                <li><a href="./movies.html">Movies</a></li>
+                <li><a href="./games.html">Games</a></li>
+                <li><a href="./new_popular.html">New & Popular</a></li>
+                <li><a href="./my_netflix.html">My Netflix</a></li>
+                <li><a href="./browse_by_language.html">Browse by Languages</a></li>
+            </ul>
+        </div>
+        <!-- search -->
+        <input type="checkbox" name="search" id="search">
+        <div class="search-bar">
+            <label for="search"><i class="fa-solid fa-arrow-left"></i><i class="fa-brands fa-sistrix"></i></label>
+            <form action="#"><input type="search" name="search" id="search" placeholder="Search Show, Movies, Games"></form>
+        </div>
+        <div class="search-box">
+            <label for="search">
+                <i class="fa-brands fa-sistrix"></i>
+                <span>Search</span>
+            </label>
+        </div>
+        <!-- download button -->
+        <input type="checkbox" name="downloads" id="downloads">
+        <div class="downloads-card">
+            <label for="downloads"><i class="fa-solid fa-arrow-left"></i> <p>Downloads</p></label>
+            <div class="download-icon">
+                <i class="bi bi-arrow-down"></i>
+                <div></div>
+            </div>
+            <p>Movies and Shows that you download appear here.</p>
+            <a href="#">Find Something to Download</a>
+        </div>
+        <div class="downloads-box">
+            <label class="download" for="downloads">
+                <i class="fa-solid fa-arrow-down"></i>
+                <div class="download-bar"></div>
+            </label>
+        </div>
+        <!-- user -->
+        <input type="checkbox" name="user" id="user">
+        <div class="user-card">
+            <a href="../browse.html" class="box" style="padding: 10px 5px;">
+                <div class="option"><p>Switch Profile</p></div>
+            </a>
+            <a href="#" class="box">
+                <div class="logo"><i class="bi bi-question-circle"></i></div>
+                <div class="option"><p>Help Center</p></div>
+            </a>
+            <a href="../../index.html" class="box">
+                <div class="option"><p>Sign Out of Netflix</p></div>
+            </a>
+        </div>
+        <div class="user-box">
+            <!-- <div class="kids">
+                <a href="./kids/home.html"><img src="../../assets/images/kids.png" alt="kids"><span>Children</span></a>
+            </div> -->
+            <div class="user">
+                <label for="user">
+                    <a href="#"><img src="../../assets/images/kids.png" alt="user"></a>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <span>My Netflix</span>
+                </label>
+            </div>
+        </div>
+        <!-- bottom menu box -->
+        <div class="bottom-menu"></div>
+        <div class="home">
+            <a href="./home.html">
+                <i class="fa-regular fa-house"></i>
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="clips">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M18.5 5c.9.58 1.5 1.6 1.5 2.75v8.5A5.75 5.75 0 0 1 14.25 22h-4.5c-1.15 0-2.17-.6-2.74-1.5h7.24c2.35 0 4.25-1.9 4.25-4.25V5.01m-4.25-3c1.8 0 3.25 1.46 3.25 3.25v11c0 1.8-1.46 3.25-3.25 3.25h-7A3.25 3.25 0 0 1 4 16.25v-11C4 3.45 5.46 2 7.25 2zm-7 1.5c-.97 0-1.75.78-1.75 1.75v11c0 .97.78 1.75 1.75 1.75h7c.97 0 1.75-.78 1.75-1.75v-11c0-.97-.78-1.75-1.75-1.75zM8 8.75c0-.97 1.07-1.57 1.9-1.06l3.26 2c.79.48.79 1.64 0 2.13l-3.26 2c-.83.5-1.9-.1-1.9-1.07z"/></svg>
+                <span>clips</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="character-section">
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABQ40J4eeDXihgibbT5K9gPSpfRXNgteOqlS0Lbx7RNnQ4yvIM2Use1mMdcCj7dtuJPMC8xUQhtARNcD76baWlxMM74360tfSC4pK.webp?r=61e" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABQ-_CHRCJUgHel5xrKIKatpoG9tai99wDmC7IMf12j36Uxt-kShs4NU0Yf2zwmKcuG4n6LZ1JA3mSPwuFgJmSeFf_eepLSdk7caJ.webp?r=a98" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABQAAVzn9aszx-SODImEqHRcdssQyrs9g0nTWNNVHzyhctCx-Zm9o5Cx37iFQ1fcm8sssLDOjA2pfCnNKS07DfT0cK5ePdDg1jIFM.webp?r=e6b" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABQAhs5b6yhSSNxvwzhq_A05yH9WpWWRXnRbXr6trGi5TQwc6WYVyx3BDYV1KQRIiiSMckZAaPfwwXwHMmwwu8IGxfTEHpdWcMx85.webp?r=3c4" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABQEAG0DP-3oNdsKTfb-vqQwscbdueODjeI9_XSQQK39dvQloLpFzY3bePcC1CfiPW7QDbUrZpVR9qFPi8ECFCPzgZXxtOxKwR_xW.webp?r=0a7" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABQH8QMinDYVWB99mh5Lr6sOi3u-sQ3LzDFKJ1cmWOEyqrwkCpU26jPOYYHNUPtG2gpQgzjhTRkfQ8aJaBYdEI-orsxZpI4gC9ria.webp?r=0c7" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABQbWFdI_7ry_MWm3lhDXPLgEaNOHcsxGbE5dF59Mk8mJPWDk9ILZbqB_jcpQMqCC9uPtexndkSZm-67cCI5ucwzpLK3qDExln3a4.webp?r=9b2" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABQgl6hDCmdLv1hTwMfsxe9VX-KZeYEr4Qkd9HljMm9YZ1HP74HiDGPy87ZJsaf7q9psbLnGCdb_xGn_rXSQOivYHm2JfkIiPhtGE.webp?r=982" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABQs2re76rp-leldvtWanSWulXPLziICpP4-MsFg7jWVO5krxpOqaepq1kaISByDrwh_HHmWl-VJkX4bhFSFOw3R-At8UViEUenCN.webp?r=9e1" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABQsEGblKoPNJu8nr2URMcHcgIh0XYvIvklwRAWQLovxCzoX1w6HNiVi3PuV5AfiCNWJjUm-qM2B8tUgZpA2m6YRjnnZnvaCVT9Sx.webp?r=7fa" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABR1AI2YsXX2BKkU9WGBY5WzuOngX2-OovSCNfVJWvSIhn-ceBNb61VPMnjJepX3TEoTz1oXTTtXVau_Nh54kyAehxq5Ug4GCPv4_.webp?r=ab2" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABR7WKzYj-b4DUlyHczqp7l-y1P5L3fC7XL9A4YIRFmCjRdkoSWY9llBiVAnDdM3CE6m_bYcdAacKbQPTnAL0EC7xrtLA85U7iSmX.webp?r=461" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABRD8hugenFAWGbyFUHhEmOhzkF53R6dq8OrF7Azr4r5YidSHi8VArS5C5caPFA7gsmmfDttFQQGk1brlJ_FUtszZMqNE5fXHYsoT.webp?r=457" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABRPb8QR8d4LBfxbbZfrpAVgRQvXDyrRxYkj9hspd2-FElLpFOVNWYSR_lSoZty3JhqtOAEpqKPZZkKNPL2_eQipMLityL5kLVjAD.webp?r=0d9" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABR_Ua8ZtHVgwTo9A1sF4FEz5yjsGzfo7qgaEqduFx6kCnbOkL54q7RTs4hhBVgALuQa65s7Y9fGXLU3Qu9u7DJiiHF1Rw7bTulDa.webp?r=fc1" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABSG0_dqtqugxAW9dMOnUgPrI-Q61Y8rrXaboQbMwrm0ztFZzt37wYtw7GT-YhkE6rgcLCxUlHcZ29ENueWT086v0gaYtykOkU_28.webp?r=c62" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABSQU1BwYmUBPgf4pudjjGRRs0X5O04WaZEjiafPPaMhbljW9EPx3FUhYQ_6EPsMC0HD0QkCtntvmhlEGRU77uEjZFexBwYppBk8A.webp?r=aaf" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABSYYmZ7XllQyX0IbKLJtZNSmRTyJGomfsjGGV9cqBKQ6yzOOpBJuxagmRBpNqOJGQ768E0xsOt0SvTR4s_ZIpjdZzqPbvGhfPcB3.webp?r=0d5" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABS_kNEyQSKn14fUN00OISR3_sa2JqC4i0DwxwgBLMNdYHafqgDigMQyrKXeEZjkWNMKXxvVyB7hcPhDiXXsx7Ndjz0_NUr7Jxda8.webp?r=ed4" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABSjUCjGlv3Oeh0AmezwyxRJuz6GSQ2aLZ_WNURVBejjyPU9dpX9zTENV8TsqMcQNnmPu4pxo3atTvwGckNiKmRjAXvdKeTrmYiod.webp?r=32a" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABSjkmsRiI_Voj3tSi2omRquEFh_KmXR2PWIKT1LWgk6KFfNWOuvF5Sn1U01Y2X3JegrGoK_Gm92yH2cICzCqhUcKKG1QBtPB2d32.webp?r=d90" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABTDvvgs_JA-oph0zqrjN-uejIoaTfoRJfURZs0EDCgVJiY-VkNrSgLTp0WrlKC78NHqu8kou74Hk6NqqViZbLWFR9pXDUe2TfgID.webp?r=367" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABTHmxyWWqB_HaEQAxANnqEXqUSMzuaULIkR3YtIfoYrZdbzjHI7ejwRIxDeef81B25UpJSvM7f2nJUWMz_tLKMDp4xASf0O7el-S.webp?r=74e" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABTMdlSJjJCUE9Fq6rXX0_-Y-vo65u2mV_RqcSP5ezuZLaYi0df-pUvzRhadrlPMQKPTR_EMOwTD-2EqcRiFHmK8bSIUGNsMFitfg.webp?r=770" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABTPgbMuZMWDAcEFa6vO9gb-FYvfVGgdIXBH0uOpM1fqSIKoWAeueJA4C24N3QC063O_oCFI_Pb5sYpINEPZE4HimfDauozrIOuQx.webp?r=544" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABTUqXYhlq4ESEWR8Ht8YS-UpsilWwJ_kSxDjAdL9Y_oTwPcufNf5JmpHUDfGvJhyukTAk5ILifG-TKSVHriCnPTzPqIq-d1xx7sG.webp?r=337" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABTcPfsaHgMqq-p2ajy9YvYL-bm6vJvegXyB4h8wCPB7MB3agvVq8wztUTM8CHpoPCk0pdC4P9_-23obMA2QccJH4j0jR7Djc2h8L.webp?r=af8" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABTp_7jugqQc3QZMda5t2MdzRPAvee3m0k7Q-LzRLbO8tvDEDP0XNowVEO5ow5uSq-TvUid5O6qIANa0bz3makvvKqmkjqFTX4jTo.webp?r=402" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABTqqf8mjWPJPBzLjxC5SbNT7Gq_z_5MI_WCxP8ygSff5D1tzziCy-S4hZUR8xm9IsoIuNIZGc-NTBbccXfoxytCBx0LWhUjsqLoN.webp?r=652" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABTsPBtdF-j8c_HkQU73t_5uZR7HmLcLC0vBqiu-aXVYjvpRYa10z-7HZ5X8NBSV-HrClD_NnirdgE5qeG_bWdxM_Vwr7Cm8leg5C.webp?r=906" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABTtFwwt8Mtq7Cp33o5NqjVMI9w1qYzoaRZS_cFTDHBLp_HNa-P6F7u6rWyzFBqKdu91oySdWHLiTTlMumq9ZzRw7h6ROv7ZQ-pia.webp?r=c8d" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABX4v74YsAHzn247y0_nzmQyD5RQqvoyQqHpCmpw9p5ZmGwIQ8cG2_gs0W4ndm3ZeR2CpNYEx22qrys5Ly7Oq7GWau8klnlV155y0.webp?r=2d7" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABXSOavvSZqWexCadLcIN7yKwf1_AW9q9lfrNoMe94hfpVpqWSwZKxrkvhWLDnw7c4IIru90h7-E1oy0ZOKDQe0dA_8OhgAmbvYL6.webp?r=d97" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABX_zJ3yMcfoBPYjyjAWOEfKd1xLlIWYI8cGvqQjEFGJgP14zXw0lsZHOF9hlMxteLg3HMlw_IPU43GFTHdfZQqtjZtjHBbr4WdTF.webp?r=cb5" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABYcXJwmdLhUyGvUHHRDrFR_xvU16-HxXTIaJD-7eRgchnEdWJ1rW8LX56RGfdrlaSwIAgEbBllrb0CfrPCA9s9x-65nkW-tsYGCb.webp?r=75d" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABYzxaPUhkMfNB4Bu8GsLyTSwKd95ILOD7rt4pO1EJgKp89oSw79rWl92w2R_2huIl6zX8JPdz0XFxCHb_OkukDBbFLC-X9tbzmu2.webp?r=e5b" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABa8viPRnHHLuQpiVcnpmJvn7f6DWM173iUDpbjNVQ_HnzlOqMsZEKEdWlEdGRniJ3A-BNa7KfpAEp4ujvz6xnigU63mvwC00q9kK.webp?r=8dd" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABajiCUMTUV3fZfEKFmYEK9nleNJJzRe1wwxrc6MrFedzFB6_S44Og3qSdRTNn9Ct0pQJUM3Je51XUSKZNfg8Jkr97LAJgCbkfPsv.webp?r=753" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABasT8nOPOEzKjCQgyPYuNdIVLowyZizXbNTVA-rf5FMKcOia9r_appjcHEo6ldz6vm4yn4voDaX7sdQtM23ezckHVU7ZAPqaOU81.webp?r=7a9" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABeQMHdXDInRgDVnEVffhgXr1fawgwjzR4JsVWc46zvlsZnliVS1JUPQx6UETbHgc8BeMIhmtRVmH1rzKrtStsBISmjo1t7fwlS5p.webp?r=b88" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABQ40J4eeDXihgibbT5K9gPSpfRXNgteOqlS0Lbx7RNnQ4yvIM2Use1mMdcCj7dtuJPMC8xUQhtARNcD76baWlxMM74360tfSC4pK.webp?r=61e" alt=""></div>
+            <div class="character-box"><img src="https://occ-0-2480-3663.1.nflxso.net/dnm/api/v6/D2IMLKjK3Vidj2-RJySVu7Nxzv0/AAAABQ-_CHRCJUgHel5xrKIKatpoG9tai99wDmC7IMf12j36Uxt-kShs4NU0Yf2zwmKcuG4n6LZ1JA3mSPwuFgJmSeFf_eepLSdk7caJ.webp?r=a98" alt=""></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-box">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+                <p>Audio Description</p>
+                <p>Investors Relations</p>
+                <p>Legal Notices</p>
+                <p><i class="fa-regular fa-copyright"></i>1997-2026 Netflix, Inc.</p>
+            </div>
+            <div class="footer-box">
+                <p>Help Center</p>
+                <p>Jobs</p>
+                <p>Cookie Preferences</p>
+            </div>
+            <div class="footer-box">
+                <p>Gift Cards</p>
+                <p>Terms of Use</p>
+                <p>Corporate information</p>
+            </div>
+            <div class="footer-box">
+                <p>Media Center</p>
+                <p>Privacy</p>
+                <p>Contact Us</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>

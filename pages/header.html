@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="stylesheet" href="./header.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+        <!-- logo -->
+        <div class="logo-box">
+            <div class="netflix-logo">
+                <img src="../assets/images/Netflix_Logo_PMS.png" alt="logo">
+            </div>
+            <div class="n-logo">
+                <img src="../assets/images/nficon2023.png" alt="logo">
+                <h2>Home</h2>
+            </div>
+        </div>
+        <!-- nav -->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">New & Popular</a></li>
+                <li><a href="#">My Netflix</a></li>
+                <li><a href="#">Browse by Languages</a></li>
+                <li class="more-label"><label for="more">More<i class="fa-solid fa-angle-down"></i></label></li>
+            </ul>
+        </nav>
+        <!-- More option -->
+        <input type="checkbox" name="more" id="more">
+        <div class="more-options">
+            <!-- Duplicate nav bar -->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">New & Popular</a></li>
+                <li><a href="#">My Netflix</a></li>
+                <li><a href="#">Browse by Languages</a></li>
+            </ul>
+        </div>
+        <!-- search -->
+        <input type="checkbox" name="search" id="search">
+        <div class="search-bar">
+            <label for="search"><i class="fa-solid fa-arrow-left"></i><i class="fa-brands fa-sistrix"></i></label>
+            <form action="#"><input type="search" name="search" id="search" placeholder="Search Show, Movies, Games"></form>
+        </div>
+        <div class="search-box">
+            <label for="search">
+                <i class="fa-brands fa-sistrix"></i>
+                <span>Search</span>
+            </label>
+        </div>
+        <!-- download button -->
+        <input type="checkbox" name="downloads" id="downloads">
+        <div class="downloads-card">
+             <label for="downloads"><i class="fa-solid fa-arrow-left"></i> <p>Downloads</p></label>
+             <div class="download-icon">
+                <i class="bi bi-arrow-down"></i>
+                <div></div>
+            </div>
+            <p>Movies and Shows that you download appear here.</p>
+            <a href="#">Find Something to Download</a>
+        </div>
+        <div class="downloads-box">
+            <label class="download" for="downloads">
+                <i class="fa-solid fa-arrow-down"></i>
+                <div class="download-bar"></div>
+            </label>
+        </div>
+        <!-- notification -->
+        <input type="checkbox" name="notification" id="notification">
+        <div class="notification-card">
+            <label for="notification"><i class="fa-solid fa-arrow-left"></i> <p>Notifications</p></label>
+            <a href="#" class="box">
+                <div class="image"><img src="../assets/images/notification_1.png" alt="notification"></div>
+                <div class="content">
+                    <p>Netflix Lookahead</p>
+                    <p>Explore What's coming soon</p>
+                    <span>Today</span>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <div class="image"><img src="../assets/images/notification_2.png" alt="notification"></div>
+                <div class="content">
+                    <p>A Top drama picked for you</p>
+                    <p>Vishwanath&Sons</p>
+                    <span> 1 day ago</span>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <div class="image"><img src="../assets/images/notification_3.jpg" alt="notification"></div>
+                <div class="content">
+                    <p>Your Latest Top picks</p>
+                    <p>Find new Favourite</p>
+                    <span>1 week ago</span>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <div class="image"><img src="../assets/images/notification_6.png" alt="notification"></div>
+                <div class="content">
+                    <p>Don't miss out with</p>
+                    <p>My Hero Acadamia</p>
+                    <span>3 weeks ago</span>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <div class="image"><img src="../assets/images/notification_5.png" alt="notification"></div>
+                <div class="content">
+                    <p>A top horror title picked for you</p>
+                    <p>Check out sweat home</p>
+                    <span>3 weeks ago</span>
+                </div>
+            </a>
+        </div>
+        <div class="notification-box">
+            <label class="notification" for="notification">
+                <div class="count">14</div>
+                <i class="fa-regular fa-bell"></i>
+            </label>
+        </div>
+        <!-- user -->
+        <input type="checkbox" name="user" id="user">
+        <div class="user-card">
+            <a href="#" class="box">
+                <div class="logo"><img src="../assets/images/kids.png" alt="kids"></div>
+                <div class="option"><p>Children</p></div>
+            </a>
+            <a href="#" class="box">
+                <div class="logo"><i class="bi bi-pencil"></i></div>
+                <div class="option"><p>Manage Profiles</p></div>
+            </a>
+            <a href="#" class="box">
+                <div class="logo"><i class="bi bi-emoji-expressionless"></i></div>
+                <div class="option"><p>Transfer Profile</ap></div>
+            </a>
+            <a href="#" class="box">
+                <div class="logo"><i class="bi bi-person"></i></div>
+                <div class="option"><p>Account</p></div>
+            </a>
+            <a href="#" class="box">
+                <div class="logo"><i class="bi bi-question-circle"></i></div>
+                <div class="option"><p>Help Center</p></div>
+            </a>
+            <a href="#" class="box">
+                <div class="option"><p>Sign Out of Netflix</p></div>
+            </a>
+        </div>
+        <div class="user-box">
+            <div class="kids">
+                <a href="#"><img src="../assets/images/kids.png" alt="kids"><span>Children</span></a>
+            </div>
+            <div class="user">
+                <label for="user">
+                    <a href="#"><img src="../assets/images/user.png" alt="user"></a>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <span>My Netflix</span>
+                </label>
+            </div>
+        </div>
+        <!-- bottom menu box -->
+        <div class="bottom-menu"></div>
+        <div class="home">
+            <a href="./home.html">
+                <i class="fa-regular fa-house"></i>
+                <span>Home</span>
+            </a>
+        </div>
+        <div class="clips">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="M18.5 5c.9.58 1.5 1.6 1.5 2.75v8.5A5.75 5.75 0 0 1 14.25 22h-4.5c-1.15 0-2.17-.6-2.74-1.5h7.24c2.35 0 4.25-1.9 4.25-4.25V5.01m-4.25-3c1.8 0 3.25 1.46 3.25 3.25v11c0 1.8-1.46 3.25-3.25 3.25h-7A3.25 3.25 0 0 1 4 16.25v-11C4 3.45 5.46 2 7.25 2zm-7 1.5c-.97 0-1.75.78-1.75 1.75v11c0 .97.78 1.75 1.75 1.75h7c.97 0 1.75-.78 1.75-1.75v-11c0-.97-.78-1.75-1.75-1.75zM8 8.75c0-.97 1.07-1.57 1.9-1.06l3.26 2c.79.48.79 1.64 0 2.13l-3.26 2c-.83.5-1.9-.1-1.9-1.07z"/></svg>
+                <span>clips</span>
+            </a>
+        </div>
+    </header>
+    <main>
+        
+    </main>
+    </div>
+</body>
+</html>

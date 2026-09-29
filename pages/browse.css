@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to bottom, rgb(75, 20, 20), rgb(10, 2, 2));
+    width: 100%;
+    height: 100vh;
+}
+header{
+    width: 100%;
+    height: 15vh;
+    border-bottom: solid 2px rgba(128, 128, 128, 0.137);
+    display: flex;
+}
+header .logo{
+    width: 90%;
+    margin: auto;
+    padding-top: 2vh;
+}
+.logo img{
+    width: 100px;
+    height: 40px;
+}
+form{
+    width: 30%;
+    margin: auto;
+    padding: 0vh 0px;
+    font-family: sans-serif;
+    color: white;
+    position: relative;
+    text-align: center;
+}
+h1{
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 10vh;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+form>div{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 10vh 0px;
+}
+form>div>a{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+form>div>a>div{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(128, 128, 128, 0.226);
+    border-radius: 10px;
+}
+form>div>a>div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+form>div>a>div i{
+    font-size: 25px;
+}
+form>div>a>p{
+    padding: 20px 0px;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(179, 177, 177);
+}
+form>div>a:last-child>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form>button{
+    margin: auto;
+    padding: 10px 10px;
+    border-radius: 50px;
+    background-color: rgba(12, 12, 12, 0.897);
+    border: solid 1px rgba(128, 128, 128, 0.459);
+
+}
+form>button>a{
+    color: white;
+    font-weight: bolder;
+    font-size: 17px;
+    text-decoration: none;
+}
+@media (max-width:575.99px) {
+    form{
+        width: 90%;
+    }
+    h1{
+        font-size: 30px;
+    }
+}
+@media (min-width:576px) and (max-width:767.99px){
+    form{
+        width: 80%;
+    }
+}
+@media (min-width:768px) and (max-width:991.99px) {
+    form{
+        width: 50%;
+    }
+}
+@media (min-width:992px) and (max-width:1199.99px) {
+    form{
+        width: 40%;
+    }
+}

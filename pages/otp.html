@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./otp.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/images/Netflix_Logo_PMS.png" alt="logo">
+        </div>
+    </header>
+    <main>
+        <form action="./browse.html">
+            <h1>Enter the code we sent your email</h1>
+            <input type="email" name="email" id="email" placeholder="johndoe123@gmail.com" readonly>
+            <a href="#">Change</a>
+            <br><br>
+            <input type="text" name="otp1" id="otp1" required maxlength="1">
+            <input type="text" name="otp2" id="otp2" required maxlength="1">
+            <input type="text" name="otp3" id="otp3" required maxlength="1">
+            <input type="text" name="otp4" id="otp4" required maxlength="1">
+            <br><br>
+            <p>This code will expire in 15 minutes.</p>
+            <p>Dis not get a code? <a href="#">Resend code.</a></p>
+            <select name="help" id="help" disabled>
+                <option value="help">Get help</option>
+            </select>
+            <input type="submit" value="">
+        </form>
+    </main>
+</body>
+</html>

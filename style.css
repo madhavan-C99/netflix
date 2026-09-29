@@ -1,0 +1,606 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+:root{
+    --red:rgb(231, 0, 0);
+    --radius:3px;
+    --bg-color:rgb(0, 0, 5);
+    --bg:rgba(0, 0, 26, 0.103);
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+input:focus{
+    background-color: transparent;
+    color: white;
+}
+body{
+    background-color: var(--bg-color);
+}
+header{
+    width: 80%;
+    height: 12vh;
+    display: flex;
+    position: absolute;
+    left: 10%;
+}
+header>div{
+    width: 50%;
+    height: 100%;
+} 
+header>div:first-child{
+    display: flex;
+    justify-content: flex-start;
+}
+header>div:first-child img{
+    width: 200px;
+    height: 100%;
+}
+header>div:last-child{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0px 10px;
+}
+header>div:last-child>div{
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+}
+header>div:last-child>div:first-child{
+    border: solid 1px gray;
+    border-radius: var(--radius);
+    height: 30px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header>div:last-child>div:first-child svg{
+    width: 18px;
+    height: 100%;
+}
+header>div:last-child>div:first-child select{
+    background-color: transparent;
+    height: 30px;
+    border: none;
+    color: white;
+}
+header>div:last-child>div:first-child select option{
+    color: black;
+}
+header>div:last-child>div:first-child select:focus{
+    outline: none;
+}
+header>div:last-child>div:last-child a{
+    display: block;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: var(--radius);
+    height: 30px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-image:linear-gradient(to left, rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.637)), url(./assets/images/netflix_background.jpg);
+    width: 100%;
+    height: auto;
+}
+.hero-container{
+    width: 80vw;
+    margin: auto;
+    padding-top: 35vh;
+    padding-bottom: 25vh;
+}
+.heading-box{
+    text-align: center;
+    color: white;
+}
+.heading-box h1{
+    width: 47%;
+    font-size: 50px;
+    margin: auto;
+    font-weight: bolder;
+    text-align: center;
+    font-family: "Google Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:"GRAD" 0;
+}
+.heading-box h3,.heading-box h4{
+    padding-top: 10px;
+    font-family: "Google Sans", sans-serif;
+    font-weight: thin;
+}
+.heading-box h4{
+    font-size: 15px;
+    padding-top: 40px;
+}
+.form{
+    width: 100%;
+    margin: 20px 0px;
+}
+.form form{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.form form>div:first-child{
+    display: flex;
+}
+.form form>div:first-child input{
+    height: 50px;
+    width: 300px;
+    border-radius: var(--radius);
+    border: none;
+    border: solid 1px grey;
+    background-color: rgba(2, 2, 2, 0.205);
+    font-size: 16px;
+    padding-left: 10px;
+    color: white;
+}
+.form form>div:last-child{
+    display: flex;
+}
+.form form>div:last-child button{
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: var(--radius);
+}
+.form form>div:last-child a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.section-2{
+    position: relative;
+    background-color: var(--bg-color);
+}
+.border-box{
+    background: linear-gradient(to left, rgb(101, 0, 114),rgb(255, 0, 0),rgb(133, 0, 133));
+    width: 100%;
+    height: 100px;
+    border-radius: 40%;
+    position: absolute;
+    top: -50px;
+    z-index: 0;
+}
+.border-box-2{
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 100px;
+    border-radius: 37%;
+    position: absolute;
+    top: -45px;
+    z-index: 0;
+    overflow-y: hidden;
+}
+.box-blur{
+    background-color: rgba(64, 51, 253, 0.521);
+    width: 50%;
+    height: 50px;
+    border-radius: 90%;
+    position: absolute;
+    filter: blur(50px);
+    top: -40px;
+    left: 25%;
+    z-index: 1;
+    box-shadow: 0px 10px 0px 0px rgba(71, 58, 255, 0.521);
+}
+.trending-movies{
+    background-color: var(--bg-color);
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 15vh;
+    z-index: 0;
+}
+.trending-movies h4{
+    color: white;
+    width: 80%;
+    margin: auto;
+    font-size: 25px;
+    font-family: "Google Sans", sans-serif;
+    font-weight: bolder;
+}
+.movies-container{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 0vh 0px;
+    display: flex;
+    justify-content: center;
+}
+.movies-container>div:first-child,
+.movies-container>div:last-child{
+    width: 5%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left-slider a, .right-slider a{
+    background-color: rgba(128, 128, 128, 0.062);
+    padding: 50px 2px;
+    border-radius: 10px;
+    color: white;
+}
+.movies-container>div:first-child i{
+    transform: rotateZ(180deg);
+}
+.movies-container>div:nth-child(2){
+    width: 70%;
+    height: auto;
+}
+.movies-container>div:nth-child(2) .slide{
+    padding: 50px 30px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    align-items: center;
+}
+.movies-container .card{
+    width: 200px;
+    height: 280px;
+    border-radius: var(--radius);
+    flex-shrink: 0;
+    position: relative;
+    transition: 500ms;
+    cursor: pointer;
+}
+.movies-container .card:hover{
+    transform: scale(1.1);
+}
+.movies-container .card img{
+    width: 100%;
+    height: 100%;
+    border-radius:10px;
+}
+.movies-container .card span{
+    position: absolute;
+    bottom: 5%;
+    left: -20px;
+    font-size: 100px;
+    font-weight: bolder;
+    -webkit-text-stroke-color: grey;
+    -webkit-text-stroke-width: 2px;
+}
+.reason-container{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 5vh;
+    padding-bottom: 10vh;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+}
+.reason-container .card-box{
+    background: linear-gradient(160deg, #1C1933, #200E19);
+    border-radius: 10px;
+    position: relative;
+    padding: 20px 15px;
+    padding-bottom: 120px;
+}
+.reason-container .card-box h4{
+    font-size: 24px;
+    padding-bottom: 20px;
+    margin: 0;
+    width: 100%;
+}
+.reason-container .card-box p{
+    color: rgb(179, 179, 179);
+    font-size: 18px;
+    font-family: "Google Sans", sans-serif;
+}
+.reason-container .card-box svg{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* 
+=================
+Question section
+================= 
+*/
+.question-section{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 10vh;
+}
+.question-section h4{
+    margin: 0;
+}
+.question-box{
+    display: block;
+    width: 100%;
+    height: 65px;
+    overflow-y: hidden;
+}
+.question-box>.question-card{
+    background-color: rgba(77, 75, 75, 0.438);
+    cursor:pointer;
+    transition: 500ms;
+    padding: 0px 20px;
+}
+.question-box>.question-card:hover{
+    background-color: rgba(77, 75, 75, 0.788);
+}
+.question-box>.question-card>.question{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.question-box>.question-card>.question>div:first-child{
+    width: 90%;
+}
+.question-box>.question-card>.question>div:first-child h4{
+    font-size: 20px;
+}
+.question-box>.question-card>.question i{
+    color: white;
+}
+.answer{
+    padding: 20px 0px;
+}
+.answer h4{
+    font-size: 20px;
+    width: 100%;
+}
+input[type='checkbox']{
+    visibility: hidden;
+}
+input[type='checkbox']:checked+.question-box{
+    height: auto;
+    overflow-y: visible;
+}
+.question{
+    display: flex;
+    align-items: center;
+}
+.question-section+h3{
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+.question-section+h3+.form{
+    padding-bottom: 10vh;
+}
+footer{
+    background-color: var(--bg-color);
+    margin: 0;
+    font-family: sans-serif;
+}
+.footer-container{
+    width: 80%;
+    margin: auto;
+    color: grey;
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 5vh 0px;
+}
+.footer-container p{
+    padding: 10px 0px;
+}
+.footer-container a{
+    color: grey;
+}
+footer .language-select{
+    border: solid 1px gray;
+    border-radius: var(--radius);
+    height: 30px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(41, 41, 41, 0.418);
+}
+footer .language-select select{
+    background-color: transparent;
+    height: 30px;
+    border: none;
+    color: white;
+}
+footer .language-select select option{
+    color: black;
+}
+footer .language-select select:focus{
+    outline: none;
+}
+footer .language-select svg{
+    width: 18px;
+    height: 100%;
+}
+footer .language-select+p{
+    padding: 10vh 0px;
+}
+footer .language-select+p+span{
+    padding-bottom: 15vh;
+    font-size: 14px;
+}
+
+/* XS mobile*/
+@media (max-width:575.99px) {
+    header{
+        width: 95%;
+        height: 9vh;
+        left: 2.5%;
+    }
+    header>div:first-child{
+        width: 30%;
+    }
+    header>div:last-child{
+        width: 70%;
+    }
+    header>div:first-child img{
+        width: 100px;
+        height: 100%;
+    }   
+    .hero-container,.movies-container,.reason-container,.question-section{
+        width: 95%;
+    }
+    .heading-box h1{
+        width: 85%;
+        font-size: 30px;
+    } 
+    .form form{
+        flex-direction: column;
+        align-items: center;
+    }
+    .form form>div{
+        width: 100%;
+        justify-content: center;
+    }
+    .form form>div:first-child input{
+        width: 100%;   
+    }
+    .movies-container>div:nth-child(2) {
+        width: 90%;
+    }
+    .movies-container .card{
+        width: 120px;
+        height: 200px;
+    }
+    .movies-container .card img{
+        height: 100%;
+        height: 200px;
+    }
+    .movies-container .card span{
+        bottom: 5%;
+        font-size: 80px;
+    }
+    .left-slider a, .right-slider a{
+        background-color: rgba(128, 128, 128, 0.062);
+        padding: 15px 2px;
+    }
+    .reason-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .question-box>.question-card>.question>div:first-child h4{
+        font-size: 16px;
+    }
+    .footer-content{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
+/* SM landscape*/
+@media (min-width:576px) and (max-width:767.99px) {
+    header{
+        width: 90%;
+        height: 9vh;
+        left: 5%;
+    }
+    header>div:first-child{
+        width: 30%;
+    }
+    header>div:last-child{
+        width: 70%;
+    }
+    header>div:first-child img{
+        width: 100px;
+        height: 100%;
+    } 
+    .hero-container,.movies-container,.reason-container,.question-section{
+        width: 90%;
+    } 
+    .heading-box h1{
+        width: 65%;
+        font-size: 34px;
+    } 
+    .movies-container>div:nth-child(2) {
+        width: 90%;
+    }
+    .reason-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer-content{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+/* MD tablet*/
+@media (min-width:768px) and (max-width:991.99px) {
+    header{
+        width: 90%;
+        height: 9vh;
+        left: 5%;
+    }
+    header>div:first-child{
+        width: 30%;
+    }
+    header>div:last-child{
+        width: 70%;
+    }
+    header>div:first-child img{
+        width: 100px;
+        height: 100%;
+    } 
+    .hero-container,.movies-container,.reason-container,.question-section{
+        width: 90%;
+    }
+    .heading-box h1{
+        width: 65%;
+        font-size: 38px;
+    } 
+    .movies-container>div:nth-child(2) {
+        width: 90%;
+    }
+    .reason-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer-content{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+/* sm large (small laptops)*/
+@media (min-width:992px) and (max-width:1199.99px) {
+    header{
+        width: 85%;
+        height: 9vh;
+        left: 7.5%;
+    }
+    .hero-container,.movies-container,.reason-container,.question-section{
+        width: 85%;
+    }
+    .heading-box h1{
+        font-size: 40px;
+        width: 55%;
+    }
+    .reason-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+}
+/* large laptop and desktop*/
+@media (min-width:1200px) and (max-width:1399.99px) {
+
+}
+/* extra large desktop and TV*/
+@media (min-width:1400px) {
+
+}
